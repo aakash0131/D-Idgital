@@ -1,2 +1,2 @@
-# D-Idgital
+# D-idgital
 ui for hive.ai
