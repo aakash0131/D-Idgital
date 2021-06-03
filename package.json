@@ -21,11 +21,7 @@
     "start": "webpack-dev-server --open --mode development --hot --inline",
     "build": "webpack -p --progress --colors",
     "eject": "react-scripts eject",
-    "client": "npm start",
-    "dev-server": "nodemon ./server/server.js",
-    "prod-server": "node ./server/server.js",
-    "dev": "PORT=5050 NODE_ENV=dev concurrently \"npm run dev-server\" \"npm run client\"",
-    "prod": "PORT=5050 NODE_ENV=prod npm run prod-server"
+    "client": "npm start"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
