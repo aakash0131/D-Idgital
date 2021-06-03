@@ -1,0 +1,666 @@
+.maincontainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 0.2px 0 0;
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.logincontainer {
+  width: 1200px;
+  height: 536px;
+  margin: 162.8px 33px 272px 176px;
+  padding: 56px 400px 100px;
+  border-radius: 16px;
+  border: solid 1px #ced3d7;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LeftImagemaindiv {
+  align-items: flex-end;
+  display: flex;
+  float: left;
+}
+
+.RightImagemaindiv {
+  align-items: center;
+  display: flex;
+  float: right;
+}
+
+.digitallog {
+  margin-bottom: 24px;
+}
+
+.logintext {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: center;
+  color: #051f33;
+  margin-bottom: 8px;
+}
+
+.logindetailtext {
+  margin-bottom: 38px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #051f33;
+}
+
+.usernametextfield {
+  width: 400px;
+  margin-bottom: 16px !important;
+}
+
+.passwordtextfield {
+  width: 400px;
+  margin-bottom: 32px !important;
+}
+
+.pointer {
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #697985;
+}
+
+.submitbtn {
+  width: 400px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #1089f5;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.submitbtn > .text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: white;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: white;
+  }
+  50%,
+  100% {
+    background-color: #ebe6ff27;
+  }
+}
+
+.messagebar {
+  width: 688px;
+  height: 48px;
+  background: #00bc9c !important;
+  display: none;
+}
+
+.navbar-tab-device {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .LeftImage {
+    display: none;
+  }
+  .RightImage {
+    display: none;
+  }
+
+  .maincontainer {
+    width: 100vw;
+    height: 100vh;
+    padding: 0.2px 0 110px;
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+  .logincontainer {
+    width: 290px;
+    height: auto;
+    margin: 90px 0px 0 0px;
+    padding: 44px 15px 405px 15px;
+    border-radius: 16px;
+    border: solid 1px #ced3d7;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formalign-tab {
+    text-align: center;
+  }
+
+  .logintext{
+    font-size: 20px;
+  }
+
+  .logindetailtext{
+    font-size: 14px;
+  }
+
+  .usernametextfield{
+    width: 95%;
+  }
+
+  .passwordtextfield{
+    width: 95%;
+  }
+
+  .submitbtn {
+    width: 95%;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #1089f5;
+    border: none;
+    display: flex;
+  }
+
+  .btnmaindiv{
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-tab-device {
+    display: flex;
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    padding: 0 0 0 24px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .LeftImage {
+    display: none;
+  }
+  .RightImage {
+    display: none;
+  }
+
+  .logincontainer {
+    width: 460px;
+    height: 536px;
+    margin: 90px 0px;
+    padding: 56px 0 0 0;
+    border-radius: 16px;
+    border: solid 1px #ced3d7;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formalign-tab {
+    text-align: center;
+  }
+
+  .messagebar {
+    width: 368px;
+    height: 48px;
+    background: #00bc9c !important;
+}
+
+  .btnmaindiv{
+    display: flex;
+    justify-content: center;
+  }
+
+  .submitbtn {
+    width: 400px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #1089f5;
+    border: none;
+    display: flex;
+  }
+
+  .navbar-tab-device {
+    display: flex;
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    padding: 0 0 0 24px;
+    align-items: center;
+  } 
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .LeftImage {
+    display: none;
+  }
+  .RightImage {
+    display: none;
+  }
+
+  .logincontainer {
+    width: 540px;
+    height: 536px;
+    margin: 174px 114px 0 114px;
+    padding: 56px 0 0 0;
+    border-radius: 16px;
+    border: solid 1px #ced3d7;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formalign-tab {
+    text-align: center;
+  }
+
+  .messagebar {
+    width: 368px;
+    height: 48px;
+    background: #00bc9c !important;
+}
+
+  .btnmaindiv{
+    display: flex;
+    justify-content: center;
+  }
+
+  .submitbtn {
+    width: 400px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #1089f5;
+    border: none;
+    display: flex;
+  }
+
+  .navbar-tab-device {
+    display: flex;
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    padding: 0 0 0 24px;
+    align-items: center;
+  }
+
+  .messagebar {
+    width: 280px;
+    height: 48px;
+    background: #00bc9c !important;
+    display: initial;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .LeftImage {
+    display: none;
+  }
+  .RightImage {
+    display: none;
+  }
+
+  .logincontainer {
+    width: 80%;
+    height: 536px;
+    margin: 110px 114px 0 114px;
+    padding: 56px 210px;
+    border-radius: 16px;
+    border: solid 1px #ced3d7;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formalign-tab {
+    text-align: center;
+  }
+
+  .submitbtn {
+    width: 400px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #1089f5;
+    border: none;
+    display: initial;
+  }
+
+  .navbar-tab-device {
+    display: flex;
+    background: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    padding: 0 0 0 24px;
+    align-items: center;
+  }
+  .messagebar {
+    width: 400px;
+    height: 48px;
+    background: #00bc9c !important;
+    display: initial;
+  }
+
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+  
+  .maincontainer {
+    width: 100vw;
+    height: 100vh;
+    padding: 0.2px 0 0;
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logincontainer {
+    width: 66%;
+    height: 536px;
+    margin: 75.8px 0px 0px 0px;
+    padding: 56px 233px 40px;
+    border-radius: 16px;
+    border: solid 1px #ced3d7;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formalign-tab {
+    text-align: center;
+  }
+
+  .LeftImage {
+    height: 60%;
+    width: 100%;
+    margin-left: -28px;
+  }
+
+  .RightImage {
+    height: 70%;
+    width: 100%;
+    margin-right: -110px;
+  }
+
+  .logintext {
+    font-size: 20px;
+  }
+
+  .digilogo {
+    width: 120px;
+  }
+
+  .messagebar {
+    width: 468px;
+    height: 48px;
+    background: #00bc9c !important;
+  }
+  .digitallog {
+    margin-bottom: 10px;
+  }
+
+  .logindetailtext {
+    font-size: 13px;
+  }
+
+  .usernametextfield {
+    width: 400px;
+  }
+
+  .passwordtextfield {
+    width: 400px;
+  }
+
+  .submitbtn {
+    width: 400px;
+  }
+
+  .btnmaindiv {
+    justify-content: center;
+    display: flex;
+  }
+
+  .messagebar {
+    width: 688px;
+    height: 48px;
+    background: #00bc9c !important;
+    display: initial;
+  }
+
+}
+
+
+@media screen and (min-width: 1920px) {
+  .maincontainer {
+    width: 100vw;
+    height: 100vh;
+    padding: 0.2px 0 0;
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logincontainer {
+    width: 1200px;
+    height: 536px;
+    margin: 162.8px 33px 272px 100px;
+    padding: 56px 400px 100px;
+    border-radius: 16px;
+    border: solid 1px #ced3d7;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .LeftImage {
+    align-items: flex-end;
+    display: flex;
+    float: left;
+  }
+
+  .RightImage {
+    align-items: center;
+    display: flex;
+    float: right;
+  }
+
+  .digitallog {
+    margin-bottom: 24px;
+  }
+
+  .logintext {
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: center;
+    color: #051f33;
+    margin-bottom: 8px;
+  }
+
+  .logindetailtext {
+    margin-bottom: 38px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #051f33;
+  }
+
+  .usernametextfield {
+    width: 400px;
+    margin-bottom: 16px !important;
+  }
+
+  .passwordtextfield {
+    width: 400px;
+    margin-bottom: 32px !important;
+  }
+
+  .pointer {
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #697985;
+  }
+
+  .submitbtn {
+    width: 400px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #1089f5;
+    border: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .submitbtn > .text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .dot-flashing {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    animation: dotFlashing 1s infinite linear alternate;
+    animation-delay: 0.5s;
+  }
+
+  .dot-flashing::before,
+  .dot-flashing::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot-flashing::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 0s;
+  }
+
+  .dot-flashing::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    animation: dotFlashing 1s infinite alternate;
+    animation-delay: 1s;
+  }
+
+  @keyframes dotFlashing {
+    0% {
+      background-color: white;
+    }
+    50%,
+    100% {
+      background-color: #ebe6ff27;
+    }
+  }
+
+  .messagebar {
+    width: 688px;
+    height: 48;
+    background: #00bc9c !important;
+  }
+
+  .navbar-tab-device {
+    display: none;
+  }
+}

@@ -1,0 +1,209 @@
+.aboutmaindiv {
+    padding: 21.5% 25%;
+    background-image: url("../../../public/images/about-banner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.abouttext {
+    width: 900px;
+    align-items: center;
+    margin: auto auto;
+}
+
+.abouttextheading {
+    font-family: Roboto;
+    font-size: 48px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.aboutdummytext {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.aboutlight {
+    font-size: "48px";
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .aboutmaindiv {
+        background-image: url("../../../public/images/about-banner-mobile.png");
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: auto;
+        height: 240px;
+        overflow-y: hidden;
+        margin-top: 60px;
+    }
+
+    .abouttext {
+        width: 310px;
+        align-items: center;
+        margin: auto auto;
+    }
+
+    .abouttextheading {
+        font-family: Roboto;
+        font-size: 20px;
+        margin-bottom: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .aboutdummytext {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .aboutlight {
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 300;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .aboutmaindiv {
+        background-image: url("../../../public/images/about-banner-mobile.png");
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: auto;
+        height: 380px;
+        overflow-y: hidden;
+        margin-top: 60px;
+    }
+
+    .abouttext {
+        width: 480px;
+        align-items: center;
+        margin: auto auto;
+    }
+
+    .abouttextheading {
+        font-family: Roboto;
+        font-size: 22px;
+        margin-bottom: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .aboutdummytext {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .aboutlight {
+        font-size: 22px;
+        font-family: Roboto;
+        font-weight: 300;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .aboutmaindiv {
+        background-image: url("../../../public/images/about-banner-tablet.png");
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 448px;
+        overflow-y: hidden;
+        margin-top: 60px;
+    }
+
+    .abouttext {
+        width: 678px;
+        align-items: center;
+        margin: auto auto;
+    }
+
+    .abouttextheading {
+        font-family: Roboto;
+        font-size: 32px;
+        margin-bottom: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .aboutdummytext {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .aboutlight {
+        font-size: 32px;
+        font-family: Roboto;
+        font-weight: 300;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .aboutmaindiv {
+        padding: 0;
+        background-image: url("../../../public/images/about-banner.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: hidden;
+        display: flex;
+    }
+}

@@ -1,0 +1,1174 @@
+.home-page-mainContainer {
+    background: white;
+    padding: 0.2px 0 0;
+}
+
+
+
+::-webkit-scrollbar-track{
+	border-radius: 10px;
+	background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #ffff;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	border-radius: 10px;
+	background-color: #918f8f;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #858585c2
+}
+
+.homepagediv {
+    padding-bottom: 100px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    padding: 10px 510px 10px;
+    background-color: #ffffff;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.hamburger-in-tab {
+    display: none;
+}
+
+.maindarwerdiv {
+    padding: 86px 20px 25px 20px;
+}
+
+.loginbtn {
+    width: 108px;
+    height: 40px;
+    margin: 0 0 0 40px;
+    border-radius: 4px;
+    background-color: #1089f5;
+    color: white;
+    border: none;
+    float: right;
+}
+
+.bannerimg {
+    object-fit: contain;
+    background-image: url("../../../public/images/banner.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100% 100%;
+    padding: 200px 510px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+.bannertext {
+    font-family: Roboto;
+    font-size: 48px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bannerlight {
+    font-size: "48px";
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.headertext {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.about {
+    float: right;
+    margin-left: 40px;
+    margin-top: 7px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.home {
+    float: right;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1089f5;
+    cursor: pointer;
+}
+
+.loginbtn:hover{
+    background: #b3d7f8;
+    color: #1089f5
+}
+
+.bannerdummytext {
+    font-weight: normal;
+    font-size: 18px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.content {
+    padding: 0px 510px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.content > .mainheading {
+    margin: 0 0 24px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #051f33;
+}
+
+.content > .secondheading {
+    margin: 0 0 56px 0px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #051f33;
+}
+
+.cardcontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardimg {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.cardcontent > .withimage {
+    width: 300px;
+    height: 348px;
+    margin: 56px 9px 0 9px;
+    padding: 0 0 32px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 -3px 57px 0 rgba(0, 17, 89, 0.11);
+}
+
+.dummyheadertext {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #051f33;
+}
+
+.jsondummytext {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #051f33;
+    margin: 12px 16px 0;
+    display: flex;
+}
+
+.navitemhov:hover {
+    color: #1089f5!important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .home {
+        display: none;
+    }
+    .about {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        height: 60px;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+    }
+
+    .headerinsidecontent {
+        display: flex;
+        width: 270px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .img-in-tab {
+        align-items: center;
+        height: 24px;
+        margin-left: 20px;
+    }
+
+    .hamburger-in-tab {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .loginbtn {
+        width: 100px;
+        height: 36px;
+        margin: 0;
+        border-radius: 4px;
+        background-color: #1089f5;
+        color: white;
+        border: none;
+        float: right;
+    }
+
+    .bannerimg {
+        object-fit: contain;
+        background-image: url("../../../public/images/banner-mobile.png");
+        height: 236px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 0;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bannertextmaindiv {
+        width: 290px;
+        margin: 0 auto;
+        margin: 0px auto;
+    }
+
+    .bannertext {
+        font-family: Roboto;
+        font-size: 19px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 12px;
+    }
+
+    .bannerlight {
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 400;
+    }
+
+    .removebr {
+        display: none;
+    }
+
+    .bannerdummytext {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .content {
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    .content > .mainheading {
+        margin: 0 0 16px;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .content > .secondheading {
+        margin: 0;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .cardimg {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .cardcontent > .withimage {
+        width: 320px;
+        height: 284px;
+        margin: 30px 0px 0 0px;
+        padding: 0 0 32px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 -3px 57px 0 rgb(0 17 89 / 11%);
+    }
+
+    .cardcontent {
+        display: contents;
+        flex-direction: unset;
+        flex-wrap: unset;
+        justify-content: unset;
+    }
+
+    .dummyheadertext {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.43;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .jsondummytext {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+        margin-top: 6px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .home {
+        display: none;
+    }
+    .about {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        height: 60px;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+    }
+
+    .headerinsidecontent {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .img-in-tab {
+        align-items: center;
+        height: 24px;
+        margin-left: 20px;
+        flex-grow: 100;
+    }
+
+    .hamburger-in-tab {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .loginbtn {
+        width: 100px;
+        height: 36px;
+        margin: 0;
+        border-radius: 4px;
+        background-color: #1089f5;
+        color: white;
+        border: none;
+        float: right;
+    }
+
+    .bannerimg {
+        object-fit: contain;
+        background-image: url("../../../public/images/banner-tablet.png");
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 129px 15px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bannertextmaindiv {
+        width: 380px;
+        margin: 0 auto;
+    }
+
+    .bannertext {
+        font-family: Roboto;
+        font-size: 19px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 12px;
+    }
+
+    .bannerlight {
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 400;
+    }
+
+    .removebr {
+        display: block;
+    }
+
+    .bannerdummytext {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .content {
+        padding: 0px 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .content > .mainheading {
+        margin: 0 0 16px;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .content > .secondheading {
+        margin: 0;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .cardimg {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .cardcontent > .withimage {
+        width: 320px;
+        height: 284px;
+        margin: 30px 3px 0 3px;
+        padding: 0 0 32px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 -3px 57px 0 rgb(0 17 89 / 11%);
+    }
+
+    .cardcontent {
+        display: contents;
+        flex-direction: unset;
+        flex-wrap: unset;
+        justify-content: unset;
+    }
+
+    .dummyheadertext {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.43;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .jsondummytext {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .home {
+        display: none;
+    }
+    .about {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        height: 70px;
+        padding: 10px 0px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+    }
+    .img-in-tab {
+        align-items: center;
+        margin: 0 178px 0px 249px;
+        height: 36px;
+        flex-grow: 2;
+    }
+
+    .headerinsidecontent {
+        width: 678px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .hamburger-in-tab {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .loginbtn {
+        width: 108px;
+        height: 40px;
+        margin: 0 45px 0 0;
+        border-radius: 4px;
+        background-color: #1089f5;
+        color: white;
+        border: none;
+        float: right;
+    }
+
+    .bannerimg {
+        object-fit: contain;
+        background-image: url("../../../public/images/banner-tablet.png");
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 0;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bannertextmaindiv {
+        width: 678px;
+        margin: 0 auto;
+    }
+
+    .bannertext {
+        font-family: Roboto;
+        font-size: 32px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .bannerlight {
+        font-size: 32px;
+        font-family: Roboto;
+        font-weight: 400;
+    }
+
+    .bannerdummytext {
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .content {
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 678px;
+        margin: 0 auto;
+    }
+
+    .content > .mainheading {
+        margin: 0 0 16px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .content > .secondheading {
+        margin: 0;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .cardcontent > .withimage {
+        width: 324px;
+        height: 348px;
+        margin: 30px 3px 0 3px;
+        padding: 0 0 32px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 -3px 57px 0 rgb(0 17 89 / 11%);
+    }
+
+    .cardcontent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .jsondummytext {
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 1.43;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #051f33;
+        margin: 12px 24px 0;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1180px) {
+    .header {
+        width: 100%;
+        height: 60px;
+        padding: 10px 0px;
+        background-color: #ffffff;
+        display: flex;
+        position: fixed;
+        top: 0;
+    }
+
+    .hamburger-in-tab {
+        display: none;
+    }
+
+    .headerinsidecontent {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .img-in-tab {
+        align-items: center;
+        margin: 0 0px 0px 0px;
+        height: 36px;
+    }
+
+    .headertext {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .home {
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1089f5;
+        cursor: pointer;
+    }
+
+    .about {
+        display: flex;
+        float: right;
+        margin-left: 40px;
+        margin-top: 7px;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+
+    .loginbtn {
+        width: 108px;
+        height: 40px;
+        margin: 0 0 0 40px;
+        border-radius: 4px;
+        background-color: #1089f5;
+        color: white;
+        border: none;
+        float: right;
+    }
+
+    .bannerimg {
+        object-fit: contain;
+        background-image: url("../../../public/images/banner.png");
+        background-repeat: no-repeat;
+        height: 600px;
+        background-size: 100% 100%;
+        padding: 0px;
+        margin-bottom: 50px;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bannertextmaindiv{
+        width: 860px;
+        margin: 0 auto;
+    }
+
+    .bannertext {
+        font-family: Roboto;
+        font-size: 32px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .bannerdummytext {
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .bannerlight {
+        font-size: 32px;
+        font-weight: 200;
+    }
+
+    .headertext {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .about {
+        float: right;
+        margin-left: 40px;
+        margin-top: 7px;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+
+    .home {
+        float: right;
+        margin-top: 10px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1089f5;
+        cursor: pointer;
+    }
+
+    .content {
+        padding: 0px 0px;
+        text-align: center;
+        display: flex;
+        width: 960px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .content > .mainheading {
+        margin: 0 0 24px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .content > .secondheading {
+        margin: 0 0 0px 0px;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .cardcontent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cardcontent > .withimage {
+        width: 300px;
+        height: 348px;
+        margin: 56px 9px 0 9px;
+        padding: 0 0 32px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 -3px 57px 0 rgba(0, 17, 89, 0.11);
+    }
+
+    .dummyheadertext {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.43;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .jsondummytext {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #051f33;
+        margin: 12px 16px 0;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1181px) and (max-width: 2536px) {
+    .header {
+        width: 100%;
+        height: 60px;
+        padding: 10px 0px;
+        background-color: #ffffff;
+        display: flex;
+        position: fixed;
+        top: 0;
+    }
+
+    .headerinsidecontent {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .hamburger-in-tab {
+        display: none;
+    }
+
+    .loginbtn {
+        width: 108px;
+        height: 40px;
+        margin: 0 0 0 40px;
+        border-radius: 4px;
+        background-color: #1089f5;
+        color: white;
+        border: none;
+        float: right;
+    }
+
+    .bannerimg {
+        object-fit: contain;
+        background-image: url("../../../public/images/banner.png");
+        background-repeat: no-repeat;
+        height: 600px;
+        background-size: 100% 100%;
+        padding: 0;
+        margin-bottom: 100px;
+        display: flex;
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    .bannertextmaindiv {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .bannertext {
+        font-family: Roboto;
+        font-size: 48px;
+        margin-bottom: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .bannerlight {
+        font-size: 48px;
+        font-family: Roboto;
+        font-weight: 300;
+    }
+
+    .headertext {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .about {
+        float: right;
+        margin-left: 40px;
+        margin-top: 7px;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+
+    .home {
+        float: right;
+        margin-top: 10px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1089f5;
+        cursor: pointer;
+    }
+
+    .bannerdummytext {
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .content {
+        padding: 0px 0px;
+        text-align: center;
+        display: flex;
+        width: 960px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .content > .mainheading {
+        margin: 0 0 24px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.13;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .content > .secondheading {
+        margin: 0;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .cardcontent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cardcontent > .withimage {
+        width: 300px;
+        height: 348px;
+        margin: 56px 9px 0 9px;
+        padding: 0 0 32px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 -3px 57px 0 rgba(0, 17, 89, 0.11);
+    }
+
+    .dummyheadertext {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.43;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #051f33;
+    }
+
+    .jsondummytext {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 0.7px;
+        text-align: center;
+        color: #051f33;
+        margin: 12px 16px 0;
+        display: flex;
+    }
+}
